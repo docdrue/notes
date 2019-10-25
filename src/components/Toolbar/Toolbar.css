@@ -1,0 +1,16 @@
+.Toolbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.Toolbar button {
+    margin: 0 auto 10px;
+    width: 80%;
+    display: inline-block;
+
+}
+
+.Toolbar button span {
+    display: block;
+}
+

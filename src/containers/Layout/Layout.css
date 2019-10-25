@@ -1,0 +1,12 @@
+.Layout {
+    display: flex;
+    padding: 0 10px;
+}
+
+.Layout > div {
+    flex: 4;
+}
+
+.Layout > div:first-child {
+    flex: .8;
+}
