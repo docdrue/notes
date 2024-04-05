@@ -1,10 +1,7 @@
-import React, { useEffect, Suspense } from 'react';
-import { Route, Switch, withRouter, Redirect } from "react-router-dom";
-
+import React from 'react';
 import Layout from '../src/containers/Layout/Layout'
 
-
-const app = props => {
+const app = () => {
     return (
         <div>
           <div>
