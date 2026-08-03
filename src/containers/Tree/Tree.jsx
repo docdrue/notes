@@ -1,9 +1,7 @@
-import React from 'react';
 
-import styles from './Tree.css'
 import Folders from '../../components/Folders/Folders'
 
-const tree = props => {
+const tree = () => {
     return (
         <div>
             <Folders />

@@ -1,8 +1,4 @@
-import { useEffect } from 'react';
-import { initStore } from "./store";
-
 const configureStore = () => {
-    const foldersList = [];
     // useEffect(() => {
     //     const fetchData = async () => {
     //         const result = await fetch(
