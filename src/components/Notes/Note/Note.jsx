@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStickyNote } from '@fortawesome/free-solid-svg-icons'
 
 
-const note = () => {
+const note = props => {
     return (
         <div>
             <FontAwesomeIcon icon={faStickyNote}/>
-            <div>Note Name</div>
+            <div>{props.name}</div>
         </div>
     )
 };
