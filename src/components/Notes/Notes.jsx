@@ -1,8 +1,7 @@
-import React from 'react';
 
 import Note from './Note/Note'
 
-const notes = props => {
+const notes = () => {
     return (
         <Note />
     )

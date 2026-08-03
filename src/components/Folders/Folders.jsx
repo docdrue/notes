@@ -1,14 +1,9 @@
-import React from 'react';
 import { useFetch } from "../../hook-store/fetch-hook";
 
 import Folder from '../Folders/Folder/Folder';
 //import { useStore } from "../../hook-store/store";
 
-const folders = props => {
-    const opts = {
-        parentId: 1,
-        name: 'test'
-    };
+const folders = () => {
     const url = 'http://localhost:3001/directories';
 
     console.log('render folders')

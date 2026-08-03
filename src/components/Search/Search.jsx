@@ -1,6 +1,5 @@
-import React from 'react';
 
-const search = props => {
+const search = () => {
     return (
         <input type="text"/>
     )
