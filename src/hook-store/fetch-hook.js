@@ -68,6 +68,7 @@ const useAsyncTask = (func, deps) => {
             dispatch({ type: 'init' });
         };
         return cleanup;
+        // eslint-disable-next-line react-hooks/exhaustive-deps -- `deps` is the caller-supplied reactivity list for this generic wrapper (mirrors useEffect's own contract, so it can't be a literal here); `func` is expected to be a fresh closure every render and is intentionally excluded so the effect only reruns when the caller-declared deps change.
     }, deps);
     return state;
 };
@@ -81,7 +82,7 @@ const useAsyncRun = (asyncTask) => {
             if (abort) abort();
         };
         return cleanup;
-    }, [start]);
+    }, [start, abort]);
 };
 
 const defaultInit = {};
